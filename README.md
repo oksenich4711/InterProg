@@ -6,7 +6,12 @@ InterProg - це сервіс для людей, які бажають долу�
 
 ## Developers
 
-- Жорняк Марія 
+- Жорняк Марія
+
+  [Git Account](https://github.com/MariaZhornyak)
+  
+  email: [mariya.zhornyak1907@gmail.com](mailto:mariya.zhornyak1907@gmail.com)
+
 - Коміна Олександра
 
   [Git Account](https://github.com/Alekca-K)
@@ -14,7 +19,17 @@ InterProg - це сервіс для людей, які бажають долу�
   email: [oleksandra.komina@nure.ua](mailto:oleksandra.komina@nure.ua)
   
 - Михалік Єлизавета
+
+  [Git Account](https://github.com/yelyzaveta-mykhalik)
+  
+  email: [yelyzaveta.mykhalik@gmail.com](mailto:yelyzaveta.mykhalik@gmail.com)
+
 - Офатенко Артем
+
+  [Git Account](https://github.com/ArtemOF)
+  
+  email: [standinartem@gmail.com](mailto:standinartem@gmail.com)
+  
 - Полякова Ксенія 
 
   [Git Account](https://github.com/poliakovak) 
