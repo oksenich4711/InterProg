@@ -8,12 +8,28 @@ InterProg - це сервіс для людей, які бажають долу�
 
 - Жорняк Марія 
 - Коміна Олександра
-[Git Account](https://github.com/Alekca-K) email: [oleksandra.komina@nure.ua](oleksandra.komina@nure.ua)
+
+  [Git Account](https://github.com/Alekca-K)
+  
+  email: [oleksandra.komina@nure.ua](mailto:oleksandra.komina@nure.ua)
+  
 - Михалік Єлизавета
 - Офатенко Артем
 - Полякова Ксенія 
-[Git Account](https://github.com/poliakovak) email: [kseniiapoliakova01@gmail.com](kseniiapoliakova01@gmail.com)
+
+  [Git Account](https://github.com/poliakovak) 
+  
+  email: [kseniiapoliakova01@gmail.com](mailto:kseniiapoliakova01@gmail.com)
+  
 - Сігута Діана
-[Git Account](https://github.com/Sihuta) email: [diana.sihuta@nure.ua](diana.sihuta@nure.ua)
+
+  [Git Account](https://github.com/Sihuta)
+  
+  email: [diana.sihuta@nure.ua](mailto:diana.sihuta@nure.ua)
+  
 - Українська Оксана
-[Git Account](https://github.com/oksenich4711) email: [oksana.ukrainska@nure.ua](oksana.ukrainska@nure.ua)
+
+  [Git Account](https://github.com/oksenich4711)
+  
+  email: [oksana.ukrainska@nure.ua](mailto:oksana.ukrainska@nure.ua)
+  
