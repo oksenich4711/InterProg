@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link rel="stylesheet" href="css/header.css">
+  </head>
+  <body>
+    <div id="base">
+      <div id="u2" class="ax_default" data-left="0" data-top="0" data-width="1140" data-height="58" style="z-index: 1002;">
+
+        <div id="u4" class="ax_default heading_2" style="cursor: pointer;">
+          <div id="u4_text" class="text ">
+            <p id="cache1" style=""><span id="cache2" style=""><a href="main.html" class="label" style="">InterProg</a></span></p>
+          </div>
+        </div>
+
+        <div id="u5" class="ax_default icon" style="cursor: pointer;">
+          <img id="u5_img" class="img" src="img/u5.svg">
+        </div>
+
+        <div id="u6" class="ax_default text_field">
+          <div id="u6_div" class=""></div>
+          <input id="u6_input" type="search" placeholder="Что Вы хотите изучать?" class="u6_input" tabindex="0">
+        </div>
+
+        <div id="u937" class="ax_default primary_button" style="cursor: pointer;">
+          <div id="u937_div" class="" tabindex="0"></div>
+          <div id="u937_text" class="text ">
+            <p id="cache0" style=""><span id="cache1" style=""><a href="#" class="block" style="">Курсы</a></span></p>
+          </div>
+        </div>
+
+        <div id="u938" class="ax_default icon" style="left: 1016px; top: 5px; cursor: pointer;">
+          <img id="u938_img" class="img" src="img/u938.svg">
+
+          <div id="u10" class="ax_default sub-menu" data-label="Menu">
+            <div id="u10_state0_content" class="panel_state">
+
+            <div id="u11" class="ax_default box_1">
+              <div id="u11_div" class=""></div>
+            </div>
+
+            <div id="u12" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u12_div" class="" tabindex="0"></div>
+              <div id="u12_text" class="text ">
+                <p id="cache3" style=""><span id="cache4" style=""><a href="#" class="black-label" style="">Мои курсы</a></span></p>
+              </div>
+            </div>
+
+            <div id="u13" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u13_div" class="" tabindex="0"></div>
+              <div id="u13_text" class="text ">
+                <p><span><a href="#" class="black-label" style="">Профиль</a></span></p>
+              </div>
+            </div>
+
+            <div id="u14" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u14_div" class="" tabindex="0"></div>
+              <div id="u14_text" class="text ">
+                <p><span><a href="#" class="black-label" style="">Мой персонаж</a></span></p>
+              </div>
+            </div>
+
+            <div id="u15" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u15_div" class="" tabindex="0"></div>
+              <div id="u15_text" class="text ">
+                <p><span><a href="#" class="black-label" style="">Достижения</a></span></p>
+              </div>
+            </div>
+
+            <div id="u16" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u16_div" class="" tabindex="0"></div>
+              <div id="u16_text" class="text ">
+                <p><span><a href="main.html" class="black-label" style="">Выход</a></span></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var el = document.getElementsByClassName('icon');
+      for(var i=0; i<el.length; i++) {
+         el[i].addEventListener("mouseenter", showSub, false);
+         el[i].addEventListener("mouseleave", hideSub, false);
+      }
+
+      function showSub(e) {
+         if(this.children.length>1) {
+            this.children[1].style.height = "auto";
+            this.children[1].style.overflow = "visible";
+            this.children[1].style.opacity = "1";
+         } else {
+            return false;
+         }
+      }
+
+      function hideSub(e) {
+          if(this.children.length>1) {
+            this.children[1].style.height = "0px";
+             this.children[1].style.overflow = "hidden";
+             this.children[1].style.opacity = "0";
+          } else {
+             return false;
+          }
+      }
+    </script>
+
+  </body>
+</html>
