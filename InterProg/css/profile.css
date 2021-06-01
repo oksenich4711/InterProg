@@ -1,0 +1,95 @@
+#userName
+{
+    width: 1140px;
+    height: 60px;
+    background-color: #282828;
+    opacity: 50%;
+    position: absolute;
+    top:220px;
+}
+#userAv
+{
+    width: 144px;
+    height: 144px;
+    border-radius: 80px;
+    border: 8px solid white;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: 5;
+}
+#usName
+{
+    position: absolute;
+    left: 400px;
+    color: white;
+    z-index: 100;
+    font-family: Arial Obligue;
+    font-size: 28px;
+}
+#container
+{
+    position: absolute;
+    right: 0px;
+    top: 280px;
+    z-index: 1;
+    height: 1149px;
+    width: 860px;
+    border-left: grey solid 3px;
+}
+.title
+{
+    font-family: "Arial Black";
+    font-size: 27px;
+    padding-left: 120px;
+}
+.littleBorder
+{
+    width: 100%;
+    height: 50px;
+    border-bottom: #DDDDDD solid 2px;
+}
+.date
+{
+    font-family: Arial;
+    font-size: 22px;
+    color: grey;
+}
+.dateMargin
+{
+    margin-left: 150px;
+}
+.achivDiv
+{
+    width: 100%;
+}
+.achTime
+{
+    font-family: Arial;
+    font-size: 20px;
+    color: grey;
+    margin-left: 50px;
+}
+.achivMargin
+{
+    background-color: #c6f4f7;
+    border: lightblue solid 2px;
+    width: 600px;
+    position: relative;
+    bottom: 40px;
+    left: 120px;
+    padding-left: 20px;
+}
+
+.achText
+{
+    font-family: Arial;
+    font-size: 20px;
+
+}
+.achTextBold
+{
+    font-family: Arial Black;
+    margin-top: 0px;
+    font-size: 16px;
+}
