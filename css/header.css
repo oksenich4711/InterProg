@@ -1,0 +1,511 @@
+body {
+    margin: 0px;
+    background-image: none;
+    position: relative;
+    left: 0px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#base {
+    position: absolute;
+    z-index: 0;
+}
+
+.sub-menu {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+header div {
+    display: block;
+}
+
+#u4 {
+    border-width: 0px;
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    width: 117px;
+    height: 35px;
+    display: flex;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #0400B3;
+}
+#u7 {
+    border-width: 0px;
+    position: absolute;
+    left: 862px;
+    top: 17px;
+    width: 103px;
+    height: 24px;
+    display: flex;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #0400B3;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a.logo-label {
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #0400B3;
+}
+header a.logo-label:hover {
+    color: rgb(0, 0, 0);
+}
+
+header a.black-label {
+    color: rgb(0, 0, 0);
+}
+header a.black-label:hover {
+    color: #0400B3;
+}
+
+header a.label {
+    color: #0400B3;
+}
+header a.label:hover {
+    color: rgb(0, 0, 0);
+}
+
+a.block {
+    color: rgb(255, 255, 255);
+}
+header a.block:hover {
+    color: #fcd703;
+}
+
+.ax_default {
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: normal;
+    color: #333333;
+    vertical-align: unset;
+    text-align: center;
+    line-height: normal;
+    text-transform: none;
+}
+
+#u4:hover, #u7:hover {
+    color: rgb(0, 0, 0);
+}
+
+.heading_2 {
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    text-align: left;
+}
+
+#u4 .text {
+    position: absolute;
+    align-self: flex-start;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#u4_text {
+    border-width: 0px;
+    white-space: nowrap;
+    text-transform: none;
+}
+
+header p {
+    margin: 0px;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+header p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#u5 {
+    border-width: 0px;
+    position: absolute;
+    left: 490px;
+    top: 12px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    color: #000000;
+}
+#u5_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+#u6 {
+    border-width: 0px;
+    position: absolute;
+    left: 175px;
+    top: 9px;
+    width: 308px;
+    height: 41px;
+    display: flex;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+#u6_div {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 308px;
+    height: 41px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 1);
+    border-radius: 0px;
+    box-shadow: none;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+#u6_input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 308px;
+    height: 41px;
+    padding: 2px 2px 2px 2px;
+    font-family: 'Arial Normal', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: normal;
+    color: #000000;
+    vertical-align: unset;
+    text-align: left;
+    text-transform: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+input {
+    padding: 1px 0px 1px 0px;
+    box-sizing: border-box;
+}
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    padding: 1px 2px;
+}
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+textarea, select, input, button {
+    outline: none;
+}
+
+.text_field {
+    color: #000000;
+    text-align: left;
+}
+
+#u7 .text, #u8 .text, #u937 .text, #u12 .text, #u13 .text, #u14 .text, #u15 .text, #u16 .text {
+    position: absolute;
+    align-self: center;
+    padding: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#u7_text, #u8_text, #u937_text, #u12_text, #u13_text, #u14_text, #u15_text, #u16_text {
+    border-width: 0px;
+    word-wrap: break-word;
+    text-transform: none;
+}
+
+.link_button {
+    color: #169BD5;
+}
+
+#u8 {
+    border-width: 0px;
+    position: absolute;
+    left: 987px;
+    top: 10px;
+    width: 138px;
+    height: 40px;
+    display: flex;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#u8_div:hover {
+    background-color: #950740;
+}
+
+#u8_div {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 138px;
+    height: 40px;
+    background: inherit;
+    background-color: rgba(4, 0, 179, 1);
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.primary_button {
+    color: #FFFFFF;
+}
+
+
+/*--------HEADER2-------*/
+
+#u937 {
+    border-width: 0px;
+    position: absolute;
+    left: 555px;
+    top: 11px;
+    width: 95px;
+    height: 38px;
+    display: flex;
+    font-family: 'Poppins Bold', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+}
+#u937_div {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 95px;
+    height: 38px;
+    background: inherit;
+    background-color: rgba(4, 0, 179, 1);
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    font-family: 'Poppins Bold', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+}
+
+#u938 {
+    border-width: 0px;
+    position: absolute;
+    left: 1016px;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+#u938_img {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+#u10 {
+    position: absolute;
+    left: -60px;
+    top: 50px;
+}
+#u10_state0 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 168px;
+    height: 190px;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#u11 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 168px;
+    height: 190px;
+    display: flex;
+}
+#u11_div {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 168px;
+    height: 190px;
+    background: inherit;
+    background-color: rgba(0, 0, 0, 0.6235294117647059);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#u12 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 168px;
+    height: 38px;
+    display: flex;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+}
+#u12_div, #u13_div, #u14_div, #u15_div, #u16_div {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 168px;
+    height: 38px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(170, 170, 170, 1);
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: none;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+}
+
+#u13 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    width: 168px;
+    height: 38px;
+    display: flex;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+}
+
+#u14 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 76px;
+    width: 168px;
+    height: 38px;
+    display: flex;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+}
+
+#u15 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 114px;
+    width: 168px;
+    height: 38px;
+    display: flex;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+}
+
+#u16 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 152px;
+    width: 168px;
+    height: 38px;
+    display: flex;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+}
