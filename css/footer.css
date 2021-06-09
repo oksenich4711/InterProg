@@ -46,7 +46,7 @@ a.label:hover {
     border-width: 0px;
     position: absolute;
     left: 0px;
-    top: 1428px;
+    margin-top: 1428px;
     width: 1140px;
     height: 241px;
     display: flex;
