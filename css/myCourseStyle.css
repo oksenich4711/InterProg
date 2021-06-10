@@ -169,5 +169,13 @@
     height: 200px;
     margin-top: 40px;
   }
+
+  .testMap {
+      background-image: url("../resourses/testMapBackground.svg");
+      width: 530px;
+      height: 162px;
+      margin-left: auto;
+      margin-right: auto;
+  }
   
 

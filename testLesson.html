@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/myCourseStyle.css">
     <link rel="stylesheet" href="./css/footer-course.css">
     <link rel="stylesheet" href="./css/header.css">
+    
     <title>Test</title>
 </head>
 <body>
@@ -90,7 +91,7 @@
     </header>
     <div class="mapInfo">
         <h1>Теоретический тест</h1>
-        <div class="quiz-container">
+    <div class="quiz-container">
         <div id="quiz"></div>
         </div>
         <button id="previous" class="buttonTest">Назад</button>
@@ -98,13 +99,14 @@
         <button id="submit" class="buttonTest">Отправить</button>
 <div id="results"></div>
     </div>
-    
+    <div class="testMap">
+      <img id="pointer" style="position: absolute; top: 520px; left: 320px; " " src="./resourses/mapPointer.svg">
+    </div>
     <div id="link" class="mapInfo" style="visibility: hidden;">
         <h3 width="320px">Перейти к практике</h3>
         <div class="arrowButton" onclick="location.href = './practice.html'"></div>
     </div>
     
-
     <footer>
       <div id="u70" class="ax_default box_1">
         <img id="u70_img" class="img " src="./img/u70.svg">
@@ -207,5 +209,8 @@
     </footer>
 
     <script src="./js/profile.js"></script>
+    <script src="./js/testAnimation.js"></script>
+
+  
 </body>
 </html>
