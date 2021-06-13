@@ -43,6 +43,7 @@ a.label:hover {
 }
 
 #u70 {
+<<<<<<< HEAD
   border-width: 0px;
   position: absolute;
   left: 0px;
@@ -50,6 +51,15 @@ a.label:hover {
   width: 1140px;
   height: 241px;
   display: flex;
+=======
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    margin-top: 1428px;
+    width: 1140px;
+    height: 241px;
+    display: flex;
+>>>>>>> origin/Poliakova-branch
 }
 #u70_img {
   border-width: 0px;
