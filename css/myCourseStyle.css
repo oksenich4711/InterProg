@@ -31,8 +31,23 @@
     text-align: right;
 }
 
+.contactInfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+.contactInfo > h3 {
+    font-size: 20px;
+    padding: 40px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    text-align: left;
+}
+
 .mapInfo > p {
     font-size: 24;
+    text-align: justify;
 }
 
 .lessonParagraph {
