@@ -2,7 +2,7 @@ namespace InterProgApi.Models
 {
     public enum Language
     {
-        CShart,
+        CSharp,
         CPP
     }
 
@@ -11,7 +11,9 @@ namespace InterProgApi.Models
         WA,
         TL,
         WF,
-        CE
+        CE,
+        RE,
+        OK
     }
 
     public class ProblemModel
