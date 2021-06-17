@@ -2,113 +2,79 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="Practice" content="width=device-width, initial-scale=1.0">
+    <meta name="Character" content="width=device-width, initial-scale=1.0">
   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
   	<link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <style>
-      .textPract
+      .textChar
       {
         font-family: "Arial Black";
-        font-size: 18px;
-        color: #666666;
-
-      }
-      #PractText
-      {
+        font-size: 24px;
         position: absolute;
         left: 100px;
-        top: 230px;
-        height: 200px;
-        width: 900px;
-      }
-      #taskNum
-      {
-        text-decoration: underline #666666;
-        position: absolute;
-        left: 100px;
-        top: 170px;
-      }
-      #taskProg
-      {
-        position: absolute;
-        left: 700px;
-        top: 170px;
-      }
-      #progressB
-      {
-        position: absolute;
-        left: 750px;
-        top: 160px;
-        height: 45px;
-        width: 200px;
+        top: 100px;
 
       }
-      #answer
-      {
-        background: #EEEEEE;
-        border: 1px solid #999999;
-        padding: 10px; /* Поля */
-        width: 830px; /* Ширина */
-        height: 300px; /* Высота */
-        font-family: "Courier New";
-        font-size: 18px;
-        color: #444444;
-        position: absolute;
-        left:100px;
-        top:410px;
-      }
-      .submitB
-      {
-        width: 170px;
-        background-color: lightskyblue;
-        border-radius: 5px;
-        height: 60px;
-        position: absolute;
-        top: 750px;
-        font-size: 20px;
-        font-family: "Arial Normal";
-      }
-      #subB
-      {
-        left: 100px;
-      }
-      #signB
-      {
-        left: 300px;
-      }
-      #hintDiv
+      .categ
       {
         position: absolute;
-        left:830px;
-        top: 410px;
-        width: 100px;
-        heigth: 500px;
-        opacity: 0%;
-        background-color: gold;
-        padding: 10px 10px 10px 10px;
-        transition: 3s;
-
+        left: 120px;
+        width:150px;
+        height:50px;
+        background-color: #DCFFF1;
+        border-color: #47a5c1;
       }
-      #hintText
+      .itemBox
       {
-
-        width: 100px;
-        heigth: 500px;
-        max-width: 100px;
+        position: absolute;
+        left: 270px;
+        top:180px;
+        background-color: #DCFFF1;
+        border: 2px solid #47a5c1;
+        height: 296px;
+        width: 400px;
+      }
+      #Char
+      {
+        position: absolute;
+        top:100px;
+        left:720px;
+        height: 470px;
+        width: 450px;
+      }
+      .item1
+      {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #EEEEEE;
+        border: 1px solid #AAAAAA;
+        margin: 10px 10px 10px 10px;
+      }
+      .item2
+      {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #EEEEEE;
+        border: 1px solid #AAAAAA;
+        margin: 10px 10px 10px 10px;
+      }
+      .item3
+      {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #EEEEEE;
+        border: 1px solid #AAAAAA;
+        margin: 10px 10px 10px 10px;
 
       }
     </style>
   </head>
   <body>
-  <span class="textPract" id="taskNum">Задача 1</span>
-  <span class="textPract" id="taskProg">1/5</span>
-  <progress id="progressB" value="0" max="100"></progress>
-<div>
-  <span class="textPract" id="PractText">Реализуйте функцию трех аргументов lenVec3, которая вычисляет длину трехмерного вектора.
-    Аргументы функции задают декартовы координаты конца вектора, его начало подразумевается находящимся в начале координат.
-    Для извлечения квадратного корня воспользуйтесь функцией sqrt, определенной в стандартной библиотеке.</span>
-</div>
+
   <div id="base">
     <div id="u2" class="ax_default" data-left="0" data-top="0" data-width="1140" data-height="58" style="z-index: 1002;">
 
@@ -185,12 +151,8 @@
 
     </div>
   </div>
-  <textarea id="answer">Type the answer</textarea>
-  <button class="submitB" id="subB" onclick="check()">Отправить</button>
-  <button class="submitB" id="signB" onclick="hint()">Подсказка</button>
-  <div id="hintDiv">
-    <span id="hintText">Передайте в функцию 3 параметра</span>
-  </div>
+  <span class="textChar">Персонаж</span>
+
   <script type="text/javascript">
     var el = document.getElementsByClassName('icon');
     for(var i=0; i<el.length; i++) {
@@ -219,21 +181,71 @@
     }
   </script>
 
+  <div id="categories">
+    <button class="categ" style="top: 180px" onclick="mainF()">Пол</button>
+    <button class="categ" style="top: 230px">Раса</button>
+    <button class="categ" style="top: 280px" >Прическа</button>
+    <button class="categ" style="top: 330px" onclick="funcTop()">Одежда</button>
+    <button class="categ" style="top: 380px">Обувь</button>
+    <button class="categ" style="top: 430px">Аксессуар</button>
+  </div>
+  <div class="itemBox" id="sex">
+    <img class="item1" src="img/0sex.png" id="it1" style="z-index: 100">
+    <img class="item2" src="img/1sex.png"  id="it2">
+    <img class="item3" src="img/1sex.png"  id="it3">
+  </div>
+
+  <img id="Char" src="img/000.png">
 <script>
-function hint() {
-document.getElementById("hintDiv").style.opacity="100%";
-}
-function check()
-{
-  if (document.getElementById("answer").value=="lenVec3 x y z =  sqrt(x**2 + y**2 + z**2)")
+  mainF();
+
+
+
+  function mainF()
   {
-    document.getElementById("answer").style.backgroundColor="#BAF4C7";
-    document.getElementById("progressB").value="20";
+    document.getElementById("it3").style.opacity = "0%";
+    document.getElementById("it2").addEventListener('click', func2);
+    document.getElementById("it1").addEventListener('click', func1);
   }
+  function funcTop()
+  {
+    document.getElementById("it3").style.opacity = "100%";
+    document.getElementById("it3").src = "img/2top.png";
+    document.getElementById("it2").src = "img/1top.png";
+    document.getElementById("it1").src = "img/0top.png";
+    document.getElementById("it1").removeEventListener('click', func1);
+    document.getElementById("it2").removeEventListener('click', func2);
+    document.getElementById("it1").addEventListener('click', funcTop1);
+    document.getElementById("it2").addEventListener('click', funcTop2);
+    document.getElementById("it3").addEventListener('click', funcTop3);
+  }
+  function func1()
+  {
+    document.getElementById("Char").src="img/000.png";
+  }
+  function func2()
+  {
+    document.getElementById("Char").src="img/girl.png";
+  }
+function funcTop1()
+{
+  document.getElementById("Char").src="img/000.png";
 }
+  function funcTop2()
+  {
+    document.getElementById("Char").src="img/001.png";
+  }
+  function funcTop3()
+  {
+    document.getElementById("Char").src="img/002.png";
+  }
+
+
+
+  function top1(){
+
+  }
 </script>
-
-
 
 
 
