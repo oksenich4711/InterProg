@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Practice" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link rel="stylesheet" href="css/footer-course.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/typing.css">
+    <style>
+      .textPract
+      {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #666666;
+
+      }
+      #PractText
+      {
+        position: absolute;
+        left: 100px;
+        top: 230px;
+        height: 200px;
+        width: 900px;
+      }
+      #taskNum
+      {
+        text-decoration: underline #666666;
+        position: absolute;
+        left: 100px;
+        top: 170px;
+      }
+      #taskProg
+      {
+        position: absolute;
+        left: 700px;
+        top: 170px;
+      }
+      #progressB
+      {
+        position: absolute;
+        left: 750px;
+        top: 160px;
+        height: 45px;
+        width: 200px;
+
+      }
+      #answer
+      {
+        background: #eeeeee;
+        border: 1px solid #999999;
+        padding: 10px; /* Поля */
+        width: 830px; /* Ширина */
+        height: 300px; /* Высота */
+        font-family: "Courier New";
+        font-size: 18px;
+        color: #444444;
+        position: absolute;
+        left:100px;
+        top:410px;
+      }
+      .submitB
+      {
+        width: 170px;
+        color: #2e2d2d;
+        background-color: #84B3FF;
+        border: none;
+        border-radius: 5px;
+        height: 60px;
+        position: absolute;
+        top: 750px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #subB
+      {
+        left: 100px;
+      }
+      #signB
+      {
+        left: 300px;
+      }
+      #hintDiv
+      {
+        position: absolute;
+        left:830px;
+        top: 410px;
+        width: 100px;
+        heigth: 500px;
+        opacity: 0%;
+        background-color: gold;
+        padding: 10px 10px 10px 10px;
+        transition: 3s;
+
+      }
+      #hintText
+      {
+
+        width: 100px;
+        heigth: 500px;
+        max-width: 100px;
+
+      }
+
+      #p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        width: 290px;
+        top: 350px;
+        left: 100px;
+        color: whitesmoke;
+        padding: 5px;
+        background-color: #ff1a1a;
+        border-radius: 5px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body style="background-color: #fff;">
+  
+    <header>
+
+  <div id="base">
+    <div id="u2" class="ax_default" data-left="0" data-top="0" data-width="1140" data-height="58" style="z-index: 1002;">
+
+      <div id="u4" class="ax_default heading_2" style="cursor: pointer;">
+        <div id="u4_text" class="text ">
+          <p id="cache1" style=""><span id="cache2" style=""><a href="Main.html" class="logo-label" style="">InterProg</a></span></p>
+        </div>
+      </div>
+
+      <div id="u5" class="ax_default icon" style="cursor: pointer;">
+        <img id="u5_img" class="img" src="img/u5.svg">
+      </div>
+
+      <div id="u6" class="ax_default text_field">
+        <div id="u6_div" class=""></div>
+        <input id="u6_input" type="search" placeholder="Что Вы хотите изучать?" class="u6_input" tabindex="0">
+      </div>
+
+      <div id="u937" class="ax_default primary_button" style="cursor: pointer;">
+        <div id="u937_div" class="" tabindex="0"></div>
+        <div id="u937_text" class="text ">
+          <p id="cache0" style=""><span id="cache1" style=""><a href="Courses.html" class="block" style="">Курсы</a></span></p>
+        </div>
+      </div>
+
+      <div id="u938" class="ax_default icon" style="left: 1016px; top: 5px; cursor: pointer;">
+        <img id="u938_img" class="img" src="img/u938.svg">
+
+        <div id="u10" class="ax_default sub-menu" data-label="Menu">
+          <div id="u10_state0_content" class="panel_state">
+
+            <div id="u11" class="ax_default box_1">
+              <div id="u11_div" class=""></div>
+            </div>
+
+            <div id="u12" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u12_div" class="" tabindex="0"></div>
+              <div id="u12_text" class="text ">
+                <p id="cache3" style=""><span id="cache4" style=""><a href="My_courses.html" class="black-label" style="">Мои курсы</a></span></p>
+              </div>
+            </div>
+
+            <div id="u13" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u13_div" class="" tabindex="0"></div>
+              <div id="u13_text" class="text ">
+                <p><span><a href="Profile.html" class="black-label" style="">Профиль</a></span></p>
+              </div>
+            </div>
+
+            <div id="u14" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u14_div" class="" tabindex="0"></div>
+              <div id="u14_text" class="text ">
+                <p><span><a href="Character.html" class="black-label" style="">Мой персонаж</a></span></p>
+              </div>
+            </div>
+
+            <div id="u15" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u15_div" class="" tabindex="0"></div>
+              <div id="u15_text" class="text ">
+                <p><span><a href="Achivements.html" class="black-label" style="">Достижения</a></span></p>
+              </div>
+            </div>
+
+            <div id="u16" class="ax_default primary_button" style="cursor: pointer;">
+              <div id="u16_div" class="" tabindex="0"></div>
+              <div id="u16_text" class="text ">
+                <p><span><a href="Main.html" class="black-label" style="">Выход</a></span></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+  <main style="height: 900px;">
+    <span class="textPract" id="taskNum">Задача 1</span>
+  <span class="textPract" id="taskProg">1/5</span>
+  <progress id="progressB" value="0" max="100"></progress>
+<div>
+  <span class="textPract" id="PractText">Реализуйте функцию трех аргументов lenVec3, которая вычисляет длину трехмерного вектора.
+    Аргументы функции задают декартовы координаты конца вектора, его начало подразумевается находящимся в начале координат.
+    Для извлечения квадратного корня воспользуйтесь функцией sqrt, определенной в стандартной библиотеке.</span>
+</div>
+  <textarea id="answer">Type the answer</textarea>
+  <button class="submitB" id="subB" onclick="check()">Отправить</button>
+  <button class="submitB" id="signB" onclick="hint()">Подсказка</button>
+  <p id="p">Ответ неправильный. Попробуйте еще!</p>
+  <div id="hintDiv">
+    <span id="hintText">Передайте в функцию 3 параметра</span>
+  </div>
+  </main>
+  
+  <script type="text/javascript">
+    var el = document.getElementsByClassName('icon');
+    for(var i=0; i<el.length; i++) {
+      el[i].addEventListener("mouseenter", showSub, false);
+      el[i].addEventListener("mouseleave", hideSub, false);
+    }
+
+    function showSub(e) {
+      if(this.children.length>1) {
+        this.children[1].style.height = "auto";
+        this.children[1].style.overflow = "visible";
+        this.children[1].style.opacity = "1";
+      } else {
+        return false;
+      }
+    }
+
+    function hideSub(e) {
+      if(this.children.length>1) {
+        this.children[1].style.height = "0px";
+        this.children[1].style.overflow = "hidden";
+        this.children[1].style.opacity = "0";
+      } else {
+        return false;
+      }
+    }
+  </script>
+
+<script>
+function hint() {
+document.getElementById("hintDiv").style.opacity="100%";
+}
+function check()
+{
+
+  if (document.getElementById("answer").value=="lenVec3 x y z = sqrt(x**2 + y**2 + z**2)")
+  {
+    document.getElementById("p").style.visibility = "hidden";
+    document.getElementById("answer").style.backgroundColor="#BAF4C7";
+    document.getElementById("progressB").value="20";
+  }
+  else {
+    document.getElementById("p").style.visibility = "visible";
+  }
+}
+</script>
+<div class="container">
+  <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              <div class="chatbox__image--header">
+                  <img src="./images/image.png" alt="image">
+              </div>
+              <div class="chatbox__content--header">
+                  <h4 class="chatbox__heading--header">Чат поддержки</h4>
+                  <p class="chatbox__description--header">Вы можете задать любые интересующие вопросы</p>
+              </div>
+          </div>
+          <div class="chatbox__messages">
+              <div>
+                  <div class="messages__item messages__item--visitor">
+                      Здравствуйте, я оператор Александра!
+                  </div>
+        
+                  <div class="messages__item messages__item--visitor">
+                      Нужна помощь?
+                  </div>
+                  <div class="messages__item messages__item--operator">
+                    Да
+                </div>
+                  <div class="messages__item messages__item--typing">
+                      <span class="messages__dot"></span>
+                      <span class="messages__dot"></span>
+                      <span class="messages__dot"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="chatbox__footer">
+              <img src="./images/icons/emojis.svg" alt="">
+              <img src="./images/icons/microphone.svg" alt="">
+              <input type="text" placeholder="Write a message...">
+              <p class="chatbox__send--footer">Send</p>
+              <img src="./images/icons/attachment.svg" alt="">
+          </div>
+      </div>
+  </div>
+</div>
+
+<footer>
+  <div id="u70" class="ax_default box_1">
+      <img id="u70_img" class="img " src="./img/u70.svg">
+    </div>
+
+    <div id="u71" class="ax_default line">
+      <img id="u71_img" class="img " src="./img/u71.svg">
+    </div>
+
+    <div id="u72" class="ax_default label">
+      <div id="u72_text" class="text ">
+        <p><span>Ⓒ 2021 InterProg. Все права защищены. </span></p>
+      </div>
+    </div>
+
+    <div id="u73" class="ax_default icon">
+      <a href="#"><img id="u73_img" class="img " src="./img/u73.svg"></a>
+    </div>
+
+    <div id="u74" class="ax_default icon">
+      <a href="#"><img id="u74_img" class="img " src="./img/u74.svg"></a>
+    </div>
+
+    <div id="u75" class="ax_default icon">
+      <a href="#"><img id="u75_img" class="img" src="./img/u75.svg"></a>
+    </div>
+
+    <div id="u76" class="ax_default icon">
+      <a href="#"><img id="u76_img" class="img" src="./img/u76.svg"></a>
+    </div>
+
+    <div id="u77" class="ax_default icon">
+      <a href="#"><img id="u77_img" class="img" src="./img/u77.svg"></a>
+    </div>
+
+    <div id="u78" class="ax_default" data-left="916" data-top="1449" data-width="157" data-height="44">
+      <div id="u79" class="ax_default box_1">
+        <div id="u79_div" class=""></div>
+      </div>
+      <div id="u80" class="ax_default label">
+        <div id="u80_text" class="text ">
+          <p><span>Доступно в</span></p><p><span><br></span></p>
+        </div>
+      </div>
+      <div id="u81" class="ax_default label">
+        <div id="u81_text" class="text ">
+          <p><span>Google Play</span></p>
+        </div>
+      </div>
+      <div id="u82" class="ax_default icon" style="cursor: pointer;">
+        <a href="#"><img id="u82_img" class="img " src="./img/u78.svg"></a>
+      </div>
+    </div>
+
+    <div id="u83" class="ax_default link_button" style="cursor: pointer;">
+      <div id="u83_text" class="text ">
+        <p><span><a href="About_Interprog.html" class="label" style="">О нас</a></span></p>
+      </div>
+    </div>
+
+    <div id="u84" class="ax_default link_button" style="cursor: pointer;">
+      <div id="u84_text" class="text ">
+        <p><span><a href="Contacts.html" class="label" style="">Контакты</a></span></p>
+      </div>
+    </div>
+
+    <div id="u85" class="ax_default link_button" style="cursor: pointer;">
+      <div id="u85_text" class="text ">
+        <p id="cache5" style="">
+          <span id="cache6" style="">
+            <a href="Privacy_policy.html" class="label" style="">Политика конфиденциальности</a>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div id="u86" class="ax_default link_button" style="cursor: pointer;">
+      <div id="u86_text" class="text ">
+        <p><span>
+          <a href="Terms_of_service.html" class="label">Условия использования</a>
+        </span></p>
+      </div>
+    </div>
+
+    <div id="u87" class="ax_default label">
+      <div id="u87_text" class="text ">
+        <p><span>Возникли трудности с InterProg?</span></p>
+      </div>
+    </div>
+
+    <div id="u88" class="ax_default label">
+      <div id="u88_text" class="text ">
+        <p><span>Не беда, наш чат вам поможет!</span></p>
+      </div>
+    </div>
+
+    <div id="u89" class="ax_default icon" style="cursor: pointer;">
+      <div class="chatbox__button">
+        <button><img src="./img/u89.svg"></button>
+    </div>
+    </div>
+</footer>
+<script src="./assets/js/Chat.js"></script>
+<script src="./app.js"></script>
+<script src="./js/profile.js"></script>
+  </body>
+</html>

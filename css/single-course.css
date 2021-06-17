@@ -1,0 +1,65 @@
+.main {
+  top: 70px;
+  padding: 15px;
+  left: 0px;
+  background-color: #f0f0f0;
+  margin: 30px;
+  position: relative;
+}
+
+.button {
+  display: block;
+  padding: 8px;
+  margin-top: 30px;
+  width: 70%;
+  border-radius: 18px;
+  background-color: #0400B3;
+  border: solid 1px transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.button:hover {
+  color: #FCD75E;
+}
+
+
+.aside {
+  position: relative;
+  margin-top: 50px;
+  background: #f0f0f0;
+  padding: 10px;
+  width: 200px;
+  float: right;
+  z-index: 0;
+}
+
+#info-menu {
+  margin-top: 60px;
+}
+
+#join-button {
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 10px;
+  padding: 10px 25px;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);;
+}
+
+#join-button:hover {
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+#reviews {
+  margin-top: 100px;
+}
+
+#profs {
+  margin-top: 50px;
+}

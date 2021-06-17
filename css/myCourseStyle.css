@@ -1,0 +1,224 @@
+
+.mapInfo {
+    font-family: 'Arial Полужирный', 'Arial Обычный', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #555555;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+iframe {
+    margin-top: 0;
+    width: 100%;
+    height: 600px;
+}
+
+#h1-map {
+    margin-left: 150px;
+}
+#coursesTilte {
+    font-size: 30px;
+    color: #0400B3;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    margin-left: 0px;
+}
+
+.mapInfo > h1 {
+    font-size: 37;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.mapInfo > h2 {
+    font-size: 24;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: left;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.mapInfo > h3 {
+    font-size: 20;
+    padding: 40px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.contactInfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+.contactInfo > h3 {
+    font-size: 20px;
+    padding: 40px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.mapInfo > p {
+    font-size: 24;
+    text-align: justify;
+}
+
+.lessonParagraph {
+    margin: 30px;
+    padding: 30px;
+    border-width: 0px;
+    display: flex;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: #555555;
+}
+
+#map {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px;
+    background-image: url(../resourses/courseMap.png);
+    width: 1022px;
+    height: 652px;
+}
+
+#map > p {
+    width: 182px;
+    height: 80px;
+    position: relative;
+    top: 80px;
+    left: 100px;
+
+}
+
+#map .p1 {
+    width: 182px;
+    height: 80px;
+    position: relative;
+    top: 360px;
+    left: 400px;
+}
+
+.round-button {
+	width:40px;
+    position: relative;
+    top: 360px;
+    left: 445px;
+
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+    overflow:hidden;
+    
+    background: #4679BD; 
+}
+.round-button-circle:hover {
+	background:#30588e;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+
+    text-align:center;
+	color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+    
+}
+
+.arrowButton {
+    margin-bottom: 30px;
+    padding-top: 8px;
+    background-image: url(../resourses/arrowButton.svg);
+    width: 230px;
+    height: 25px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    
+}
+
+#textImg {
+    margin-top: -90px;
+    margin-left: 30px;
+    float: left;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+  }
+  .answers label{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .buttonTest{
+    font-family: 'Work Sans', sans-serif;
+      font-size: 22px;
+      background-color: #84B3FF;
+      color: #fff;
+      border: 0px;
+      border-radius: 3px;
+      padding: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+  .buttonTest:hover{
+      background-color: rgb(112, 158, 255);
+  }
+  
+  .question{
+     font-size: 25px;
+     margin-bottom: 20px;
+  }
+  
+  
+  
+  .slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+  .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  .testMap {
+      background-image: url("../resourses/testMapBackground.svg");
+      width: 530px;
+      height: 162px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+
