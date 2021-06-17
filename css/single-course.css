@@ -7,6 +7,27 @@
   position: relative;
 }
 
+.button {
+  display: block;
+  padding: 8px;
+  margin-top: 30px;
+  width: 70%;
+  border-radius: 18px;
+  background-color: #0400B3;
+  border: solid 1px transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.button:hover {
+  color: #FCD75E;
+}
+
+
 .aside {
   position: relative;
   margin-top: 50px;

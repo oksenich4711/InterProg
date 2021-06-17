@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <meta name="Practice" content="width=device-width, initial-scale=1.0">
   	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  	<link rel="stylesheet" href="css/footer.css">
+  	<link rel="stylesheet" href="css/footer-course.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/typing.css">
     <style>
       .textPract
       {
-        font-family: "Arial Black";
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
         font-size: 18px;
         color: #666666;
 
@@ -46,7 +50,7 @@
       }
       #answer
       {
-        background: #EEEEEE;
+        background: #eeeeee;
         border: 1px solid #999999;
         padding: 10px; /* Поля */
         width: 830px; /* Ширина */
@@ -61,13 +65,15 @@
       .submitB
       {
         width: 170px;
-        background-color: lightskyblue;
+        color: #2e2d2d;
+        background-color: #84B3FF;
+        border: none;
         border-radius: 5px;
         height: 60px;
         position: absolute;
         top: 750px;
         font-size: 20px;
-        font-family: "Arial Normal";
+        font-family: Arial, Helvetica, sans-serif;
       }
       #subB
       {
@@ -98,17 +104,27 @@
         max-width: 100px;
 
       }
+
+      #p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        width: 290px;
+        top: 350px;
+        left: 100px;
+        color: whitesmoke;
+        padding: 5px;
+        background-color: #ff1a1a;
+        border-radius: 5px;
+        visibility: hidden;
+      }
     </style>
   </head>
-  <body>
-  <span class="textPract" id="taskNum">Задача 1</span>
-  <span class="textPract" id="taskProg">1/5</span>
-  <progress id="progressB" value="0" max="100"></progress>
-<div>
-  <span class="textPract" id="PractText">Реализуйте функцию трех аргументов lenVec3, которая вычисляет длину трехмерного вектора.
-    Аргументы функции задают декартовы координаты конца вектора, его начало подразумевается находящимся в начале координат.
-    Для извлечения квадратного корня воспользуйтесь функцией sqrt, определенной в стандартной библиотеке.</span>
-</div>
+  <body style="background-color: #fff;">
+  
+    <header>
+
   <div id="base">
     <div id="u2" class="ax_default" data-left="0" data-top="0" data-width="1140" data-height="58" style="z-index: 1002;">
 
@@ -185,12 +201,26 @@
 
     </div>
   </div>
+</header>
+
+  <main style="height: 900px;">
+    <span class="textPract" id="taskNum">Задача 1</span>
+  <span class="textPract" id="taskProg">1/5</span>
+  <progress id="progressB" value="0" max="100"></progress>
+<div>
+  <span class="textPract" id="PractText">Реализуйте функцию трех аргументов lenVec3, которая вычисляет длину трехмерного вектора.
+    Аргументы функции задают декартовы координаты конца вектора, его начало подразумевается находящимся в начале координат.
+    Для извлечения квадратного корня воспользуйтесь функцией sqrt, определенной в стандартной библиотеке.</span>
+</div>
   <textarea id="answer">Type the answer</textarea>
   <button class="submitB" id="subB" onclick="check()">Отправить</button>
   <button class="submitB" id="signB" onclick="hint()">Подсказка</button>
+  <p id="p">Ответ неправильный. Попробуйте еще!</p>
   <div id="hintDiv">
     <span id="hintText">Передайте в функцию 3 параметра</span>
   </div>
+  </main>
+  
   <script type="text/javascript">
     var el = document.getElementsByClassName('icon');
     for(var i=0; i<el.length; i++) {
@@ -225,27 +255,66 @@ document.getElementById("hintDiv").style.opacity="100%";
 }
 function check()
 {
-  if (document.getElementById("answer").value=="lenVec3 x y z =  sqrt(x**2 + y**2 + z**2)")
+
+  if (document.getElementById("answer").value=="lenVec3 x y z = sqrt(x**2 + y**2 + z**2)")
   {
     document.getElementById("answer").style.backgroundColor="#BAF4C7";
     document.getElementById("progressB").value="20";
   }
+  else {
+    document.getElementById("p").style.visibility = "visible";
+  }
 }
 </script>
+<div class="container">
+  <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              <div class="chatbox__image--header">
+                  <img src="./images/image.png" alt="image">
+              </div>
+              <div class="chatbox__content--header">
+                  <h4 class="chatbox__heading--header">Чат поддержки</h4>
+                  <p class="chatbox__description--header">Вы можете задать любые интересующие вопросы</p>
+              </div>
+          </div>
+          <div class="chatbox__messages">
+              <div>
+                  <div class="messages__item messages__item--visitor">
+                      Здравствуйте, я оператор Александра!
+                  </div>
+        
+                  <div class="messages__item messages__item--visitor">
+                      Нужна помощь?
+                  </div>
+                  <div class="messages__item messages__item--operator">
+                    Да
+                </div>
+                  <div class="messages__item messages__item--typing">
+                      <span class="messages__dot"></span>
+                      <span class="messages__dot"></span>
+                      <span class="messages__dot"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="chatbox__footer">
+              <img src="./images/icons/emojis.svg" alt="">
+              <img src="./images/icons/microphone.svg" alt="">
+              <input type="text" placeholder="Write a message...">
+              <p class="chatbox__send--footer">Send</p>
+              <img src="./images/icons/attachment.svg" alt="">
+          </div>
+      </div>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-    <div id="u70" class="ax_default box_1">
-      <img id="u70_img" class="img " src="img/u70.svg">
+<footer>
+  <div id="u70" class="ax_default box_1">
+      <img id="u70_img" class="img " src="./img/u70.svg">
     </div>
 
     <div id="u71" class="ax_default line">
-      <img id="u71_img" class="img " src="img/u71.svg">
+      <img id="u71_img" class="img " src="./img/u71.svg">
     </div>
 
     <div id="u72" class="ax_default label">
@@ -255,23 +324,23 @@ function check()
     </div>
 
     <div id="u73" class="ax_default icon">
-      <a href="#"><img id="u73_img" class="img " src="img/u73.svg"></a>
+      <a href="#"><img id="u73_img" class="img " src="./img/u73.svg"></a>
     </div>
 
     <div id="u74" class="ax_default icon">
-      <a href="#"><img id="u74_img" class="img " src="img/u74.svg"></a>
+      <a href="#"><img id="u74_img" class="img " src="./img/u74.svg"></a>
     </div>
 
     <div id="u75" class="ax_default icon">
-      <a href="#"><img id="u75_img" class="img" src="img/u75.svg"></a>
+      <a href="#"><img id="u75_img" class="img" src="./img/u75.svg"></a>
     </div>
 
     <div id="u76" class="ax_default icon">
-      <a href="#"><img id="u76_img" class="img" src="img/u76.svg"></a>
+      <a href="#"><img id="u76_img" class="img" src="./img/u76.svg"></a>
     </div>
 
     <div id="u77" class="ax_default icon">
-      <a href="#"><img id="u77_img" class="img" src="img/u77.svg"></a>
+      <a href="#"><img id="u77_img" class="img" src="./img/u77.svg"></a>
     </div>
 
     <div id="u78" class="ax_default" data-left="916" data-top="1449" data-width="157" data-height="44">
@@ -289,7 +358,7 @@ function check()
         </div>
       </div>
       <div id="u82" class="ax_default icon" style="cursor: pointer;">
-        <a href="#"><img id="u82_img" class="img " src="img/u78.svg"></a>
+        <a href="#"><img id="u82_img" class="img " src="./img/u78.svg"></a>
       </div>
     </div>
 
@@ -336,7 +405,13 @@ function check()
     </div>
 
     <div id="u89" class="ax_default icon" style="cursor: pointer;">
-      <a href="Help_chat.html"><img id="u89_img" class="img" src="img/u89.svg" tabindex="0"></a>
+      <div class="chatbox__button">
+        <button><img src="./img/u89.svg"></button>
     </div>
+    </div>
+</footer>
+<script src="./assets/js/Chat.js"></script>
+<script src="./app.js"></script>
+<script src="./js/profile.js"></script>
   </body>
 </html>

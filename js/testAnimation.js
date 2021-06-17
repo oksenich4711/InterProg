@@ -104,7 +104,6 @@
     pointer.style.animationName = "bounce";
     pointer.style.animationTimingFunction = "ease";
     pointer.style.animationDuration = '1s';
-    pointer.style.transform = "rotate(-180deg)";
     pointer.style.left = (parseInt(currentPosition.substring(0, currentPosition.length - 2)) + 190) + 'px';
   }
 
