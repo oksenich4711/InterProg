@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           //     primarySwatch: Colors.blue[900],
           ),
-      home: SchedulePage(),
+      home: HomeScreen(),
     );
   }
 }
